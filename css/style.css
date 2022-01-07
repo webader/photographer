@@ -4,7 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
   color: #ffffff;
 }
 
@@ -18,13 +20,45 @@ a, a:hover, a:active, a:visited, a:focus {
   margin: auto;
 }
 
-.header .container {
-  background: url("./img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+body {
+  background-color: #000000;
 }
 
-.header .container .menu {
+.title {
+  background-color: #000;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  color: #BDAE82;
+  position: relative;
+  z-index: 2;
+}
+
+.title::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  height: 2px;
+  width: 270px;
+  background-color: #BDAE82;
+  margin-right: 15px;
+  z-index: -1;
+}
+
+main .container {
+  background-image: url("../img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .container .header .menu {
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,14 +71,43 @@ a, a:hover, a:active, a:visited, a:focus {
           align-items: center;
 }
 
-.header .container .menu .menu__list {
+main .container .header .menu .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.header .container .menu .menu__list .list__item {
+main .container .header .menu .menu__list .list__item {
   margin-right: 30px;
+}
+
+main .container .hero .wrap {
+  margin-left: 80px;
+  max-width: 470px;
+}
+
+main .container .hero .wrap .hero__title {
+  margin-top: 160px;
+  font-family: 'Merriweather', serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120px;
+}
+
+main .container .hero .wrap .hero__text {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+main .container .hero .wrap .hero__link {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 40px;
+  background-color: #BDAE82;
+  padding: 8px 72px;
+  color: #000000;
+  margin-bottom: 330px;
 }
 /*# sourceMappingURL=style.css.map */
