@@ -72,9 +72,7 @@
 
     <section class="skills">
         <div class="container">
-            <h2 class="skills__title">
-                Skills
-            </h2>
+            <h2 class="title"><span>Skills</span></h2>
             <ul class="skills__list">
                 <li class="list__item">
                     <img src="./img/camera1.svg" alt="Digital photography" class="item__image">
@@ -119,43 +117,164 @@
 
     <section class="portfolio">
         <div class="container">
-            <h2 class="portfolio__title"><span>Portfolio</span></h2>
+            <h2 class="title"><span>Portfolio</span></h2>
+            <ul class="portfolio__list">
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        Winter
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        Spring
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        Summer
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">
+                        Autumn
+                    </a>
+                </li>
+            </ul>
+            <ul class="picture__list">
+                <li>
+                    <img src="./img/portfolio-img.jpg" alt="Love">
+                </li>
+                <li>
+                    <img src="./img/portfolio-img2.jpg" alt="Horse">
+                </li>
+                <li>
+                    <img src="./img/portfolio-img3.jpg" alt="Children">
+                </li>
+                <li>
+                    <img src="./img/portfolio-img4.jpg" alt="Love">
+                </li>
+                <li>
+                    <img src="./img/portfolio-img5.jpg" alt="Love">
+                </li>
+                <li>
+                    <img src="./img/portfolio-img6.jpg" alt="Love">
+                </li>  
+    
+            </ul>
+        </div>          
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <h2 class="title"><span>Video</span></h2>
+            <div class="wrap">
+                <img src="./img/video-player.jpg" class="video__bg" alt="Video player">                
+                <img src="./img/play_hover.svg" class="video__hover" alt="Play">
+            </div>
         </div>
-        <ul class="portfolio__list">
-            <li class="list__item">
-                <a href="#" class="item__link">
-                    Winter
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="item__link">
-                    Spring
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="item__link">
-                    Summer
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="item__link">
-                    Autumn
-                </a>
-            </li>
-        </ul>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <h2 class="title"><span>Price</span></h2>
+            <ul class="price__list">
+                <li class="list__item">
+                    <h4 class="item__title">
+                        Standart
+                    </h4>
+                    <span>500 $</span>
+                    <ul class="item__list">
+                        <li class="item__item">
+                            One location
+                        </li>
+                        <li class="item__item">
+                            120 photos in color
+                        </li>
+                        <li class="item__item">
+                            12 photos in retouch
+                        </li>
+                        <li class="item__item">
+                            Readiness 2-3 weeks
+                        </li>
+                        <li class="item__item">
+                            Make up, visage
+                        </li>                        
+                    </ul>
+                    <a href="#" class="item__link">
+                        Order shooting
+                    </a>
+                </li>
+                <li class="list__item">
+                    <h4 class="item__title">
+                        Premium
+                    </h4>
+                    <span>700 $</span>
+                    <ul class="item__list">
+                        <li class="item__item">
+                            One or two locations
+                        </li>
+                        <li class="item__item">
+                            200 photos in color
+                        </li>
+                        <li class="item__item">
+                            20 photos in retouch
+                        </li>
+                        <li class="item__item">
+                            Readiness 1-2 weeks
+                        </li>
+                        <li class="item__item">
+                            Make up, visage
+                        </li>                        
+                    </ul>
+                    <a href="#" class="item__link">
+                        Order shooting
+                    </a>
+                </li>
+                <li class="list__item">
+                    <h4 class="item__title">
+                        Gold
+                    </h4>
+                    <span>1000 $</span>
+                    <ul class="item__list">
+                        <li class="item__item">
+                            Three locations or more
+                        </li>
+                        <li class="item__item">
+                            300 photos in color
+                        </li>
+                        <li class="item__item">
+                            50 photos in retouch
+                        </li>
+                        <li class="item__item">
+                            Readiness 1 week
+                        </li>
+                        <li class="item__item">
+                            Make up, visage, hairstyle 
+                        </li>                        
+                    </ul>
+                    <a href="#" class="item__link">
+                        Order shooting
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
     </section>
 
     <section class="contacts">
         <div class="container">
             <div class="wrap">
-                <form action="#" method="get">
+                <form action="#" method="get" id="form1">
                     <h2 class="contacts__title">
                         Contact me
                     </h2>
-                    <input type="email" name="mail" id="contacts__mail" placeholder="E-mail">
-                    <input type="tel" name="tel" id="contacts__phone" placeholder="Phone">
-                    <textarea name="message" id="contacts__message" cols="30" rows="10"></textarea>
-                    <input type="button" value="Send message">
+                    <input type="email" name="mail" id="contact__mail" placeholder="E-mail" class="contacts__mail">
+                    <input type="tel" name="tel" id="contact__phone" placeholder="Phone">
+                    <textarea name="message" id="contact__message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <!-- <input type="button" value="Send message"> -->
+                    <button type="submit" form="form1" value="Submit">Send message</button>
+                    
                 </form>
             </div>
         </div>
