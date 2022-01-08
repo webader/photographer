@@ -24,31 +24,23 @@ body {
   background-color: #000000;
 }
 
-.title {
-  background-color: #000;
+h2 {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+h2 span {
   font-family: 'Merriweather', serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 80px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 60px;
   color: #BDAE82;
-  position: relative;
-  z-index: 2;
+  background-color: #000000;
 }
 
-.title::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  content: '';
-  height: 2px;
-  width: 270px;
-  background-color: #BDAE82;
-  margin-right: 15px;
-  z-index: -1;
+li {
+  list-style-type: none;
+  text-align: center;
 }
 
 main .container {
@@ -109,5 +101,78 @@ main .container .hero .wrap .hero__link {
   padding: 8px 72px;
   color: #000000;
   margin-bottom: 330px;
+}
+
+.skills .skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .skills__list .list__item {
+  max-width: 320px;
+}
+
+.skills .skills__list .list__item .item__image {
+  margin-bottom: 50px;
+}
+
+.skills .skills__list .list__item .item__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.skills .skills__list .list__item .item__text {
+  line-height: 36px;
+}
+
+.portfolio .portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portfolio .portfolio__list .list__item {
+  margin-right: 5px;
+}
+
+.portfolio .portfolio__list .list__item .item__link {
+  display: inline-block;
+  border: 1px solid #BDAE82;
+  padding: 8px 72px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #BDAE82;
+}
+
+.portfolio .portfolio__list .list__item .item__link:hover {
+  color: #000000;
+  background-color: #BDAE82;
+}
+
+.contacts {
+  background-image: url("../img/contacts.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts .container {
+  text-align: right;
+}
+
+.contacts .container .wrap {
+  display: inline-block;
+  text-align: left;
+  max-width: 450px;
 }
 /*# sourceMappingURL=style.css.map */
